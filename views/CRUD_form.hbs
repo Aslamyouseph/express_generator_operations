@@ -1,0 +1,24 @@
+<!-- localhost:3000/CRUD/signupSubmit this way the path where occurring . remember /CRUD is the first page -->
+<form action="/CRUD/signupSubmit" method="post">
+
+  <!-- Hidden field for the student ID (for updating) -->
+  <input type="hidden" name="id" value="{{student._id}}" />
+
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" name="name" value="{{student.name}}" required />
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input type="text" name="email" value="{{student.email}}" required />
+  </div>
+
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" name="password" value="" required />
+  </div>
+
+  <button type="submit">Save Changes</button>
+  <button><a href="/CRUD/CRUD_display">View details</a></button><!--this way the path where occurring    localhost:3000/CRUD/CRUD_display-->
+</form>

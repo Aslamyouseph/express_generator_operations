@@ -1,0 +1,26 @@
+<!--<h1>{{fname}}</h1>can able to access a single value in the variable from about.js-->
+
+<!--To access the value from a object is (Act like a loop,@index is used to print the index value fo the array & this is used to print the each array values)
+{{#each names}}
+  <h1>{{@index}}.{{this}}</h1>
+{{/each}}-->
+
+<!--
+this is one way we can able to access the object value
+<h1>{{details.name1}}</h1>
+<h1>{{details.age.name1_age}}</h1>  in this way we can able to call the inner values of an object
+
+-->
+<!--this is another way we can able to access the object value
+{{#with details}}
+  <h1>{{name1}}</h1>
+  <h1>{{age.name1_age}}</h1>
+{{/with}}-->
+
+<!-- in this way we can able to give the example of if elseif
+{{#if details.admin}}
+  <h1>Admin</h1>
+{{else}}
+  <h1>Not Admin</h1>
+{{/if}}
+-->

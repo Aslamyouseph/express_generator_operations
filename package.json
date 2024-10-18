@@ -1,0 +1,23 @@
+{
+  "name": "aslam-expressgenerator",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.0.0",
+    "debug": "~2.6.9",
+    "express": "^4.21.0",
+    "express-handlebars": "^8.0.1",
+    "hbs": "^4.2.0",
+    "helmet": "^8.0.0",
+    "http-errors": "~1.6.3",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.7.0",
+    "morgan": "~1.9.1",
+    "promise": "^8.3.0",
+    "validator": "^13.12.0"
+  }
+}

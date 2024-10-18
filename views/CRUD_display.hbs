@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Contents of CRUD Operations</title>
+  </head>
+  <body>
+    <h2>Student Data</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Operations</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each students}}
+          <tr>
+            <td>{{this._id}}</td>
+            <td>{{this.name}}</td>
+            <td>{{this.email}}</td>
+            <td>
+              <a
+                href="/CRUD/CRUD_form/{{this._id}}"
+              >Update</a><!--localhost:3000/CRUD/CRUD_form/-->
+              |
+              <a
+                href="/CRUD/delete/{{this._id}}"
+              >Delete</a><!--localhost:3000/CRUD/delete/-->
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </body>
+</html>

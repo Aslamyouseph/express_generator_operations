@@ -1,3 +1,7 @@
+/**
+ * All the project contain only one database . and it contain many table/collection and each table contain many documents
+ */
+
 const mongoose = require("mongoose");
 
 const connectDB = async () => {

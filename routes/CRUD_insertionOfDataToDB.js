@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
   res.render("CRUD_form", { title: "Create Student" });
 });
 
-// Render display page to show all students
+// Render display page to show all students  => localhost:3000/CRUD/CRUD_display
 router.get("/CRUD_display", async (req, res) => {
   try {
     const students = await Student.find().lean(); // Get all students details from the database

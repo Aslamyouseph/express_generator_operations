@@ -54,8 +54,8 @@ router.post("/signupSubmit", async (req, res) => {
     const { id, name, email, password } = req.body;
 
     // Validation checks
-    if (!validator.isLength(name, { min: 3, max: 20 })) {
-      throw new Error("Name must be between 3 and 20 characters");
+    if (!validator.isLength(name, { min: 3, max: 50 })) {
+      throw new Error("Name must be between 3 and 50 characters");
     }
     if (!validator.isEmail(email)) {
       throw new Error("Invalid email format");
